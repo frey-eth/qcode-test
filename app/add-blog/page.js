@@ -3,7 +3,7 @@ import React from "react";
 import { useFormik } from "formik";
 import Dropzone from "react-dropzone";
 import { TiUpload } from "react-icons/ti";
-import { useAppSelector, useAppDispatch, useAppStore } from "../../lib/hooks";
+import { useAppSelector, useAppDispatch } from "../../lib/hooks";
 import { deleteImg, uploadImg } from "@/lib/features/upload/uploadSlice";
 import { createBlog } from "@/lib/features/blog/blogSlice";
 import { Image } from "@chakra-ui/react";
@@ -78,7 +78,7 @@ const AddBlog = () => {
                     <input {...getInputProps()} />
                     <TiUpload className="text-6xl" />
                     <p>
-                      Drag 'n' drop some files here, or click to select files
+                      Drag and drop some files here, or click to select files
                     </p>
                   </div>
                 </section>

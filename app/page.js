@@ -1,6 +1,6 @@
 "use client";
 import BlogCard from "@/components/blogCard";
-import { useAppSelector, useAppDispatch, useAppStore } from "../lib/hooks";
+import { useAppSelector, useAppStore } from "../lib/hooks";
 import { useEffect } from "react";
 import { getAllBlog } from "@/lib/features/blog/blogSlice";
 
@@ -14,7 +14,7 @@ export default function Home() {
     <main className="flex min-h-screen justify-center items-center p-24">
       <div className="flex-col flex justify-center items-center gap-5">
         {blogs?.map((blog, index) => (
-          <BlogCard key={index} data={blog}/>
+          <BlogCard key={index} data={blog} />
         ))}
       </div>
     </main>

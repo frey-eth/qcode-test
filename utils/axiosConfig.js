@@ -1,4 +1,4 @@
-export const baseUrl = "https://qode-backend.onrender.com/api/";
+export const baseUrl = "http://localhost:8080/api/";
 
 export const config = {
   headers: {
